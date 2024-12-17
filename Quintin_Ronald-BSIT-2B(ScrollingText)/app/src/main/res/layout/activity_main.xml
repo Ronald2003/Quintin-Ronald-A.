@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context="com.example.scrollingtext.MainActivity">
+
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_regular"
+        android:text="@string/article_title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/articleSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/articleTitle"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:padding="@dimen/padding_regular"
+        android:text="@string/article_subtitle"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/helloWorldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:background="@color/white"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        android:padding="@dimen/padding_regular"
+        android:text="@string/article_text"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>
